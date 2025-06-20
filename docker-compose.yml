@@ -4,7 +4,7 @@ x-app: &default-app
   depends_on:
     - "redis"
   volumes:
-    - .:/app
+#    - .:/app
     - spatialite:/app/db
   environment:
     - REDIS_HOST=redis
